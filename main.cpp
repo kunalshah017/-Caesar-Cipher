@@ -24,7 +24,11 @@ public:
         {
             if (statement[i] == 'z')
             {
-                statement[i] = statement[i] - 25;
+                statement[i] = statement[i] - 26;
+            }
+            if (statement[i] == ' ')
+            {
+                statement[i] = '.';
             }
             else
             {
@@ -53,7 +57,11 @@ public:
         {
             if (key[i] == 'a')
             {
-                key[i] = key[i] + 25;
+                key[i] = key[i] + 26;
+            }
+            if (statement[i] == '.')
+            {
+                statement[i] = 32;
             }
             else
             {
@@ -89,7 +97,10 @@ int main()
     {
         obj.GetKey();
         obj.Decrypt();
+
         obj.PrintDecryptedData();
+
+        cout << "\n(spaces are sometimes denoted with '-')";
     }
 
     cout << "\n\n **** Thank you for trying it ****" << endl;
