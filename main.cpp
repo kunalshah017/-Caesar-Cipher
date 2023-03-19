@@ -92,6 +92,7 @@ int main()
         obj.PrintDecryptedData();
     }
 
-    cout << "\n\n **** Thank you for trying it ****";
+    cout << "\n\n **** Thank you for trying it ****" << endl;
+    system("pause");
     return 0;
 }
